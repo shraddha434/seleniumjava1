@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-27T00:58:12 IST" name="Default suite" finished-at="2022-02-27T00:58:12 IST" duration-ms="321">
+    <groups>
+    </groups>
+    <test started-at="2022-02-27T00:58:12 IST" name="Default test" finished-at="2022-02-27T00:58:12 IST" duration-ms="321">
+      <class name="test1.tesng1.dataporvide_data">
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:test1.tesng1.dataporvide_data@56620197]" started-at="2022-02-27T00:58:12 IST" name="f" data-provider="sh" finished-at="2022-02-27T00:58:12 IST" duration-ms="30" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[p1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:test1.tesng1.dataporvide_data@56620197]" started-at="2022-02-27T00:58:12 IST" name="f" data-provider="sh" finished-at="2022-02-27T00:58:12 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[p2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="f2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test1.tesng1.dataporvide_data@56620197]" started-at="2022-02-27T00:58:12 IST" name="f2" data-provider="sh" finished-at="2022-02-27T00:58:12 IST" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fail]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method signature="f2(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test1.tesng1.dataporvide_data@56620197]" started-at="2022-02-27T00:58:12 IST" name="f2" data-provider="sh" finished-at="2022-02-27T00:58:12 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[u1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pas]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+      </class> <!-- test1.tesng1.dataporvide_data -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
