@@ -15,8 +15,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.bouncycastle.crypto.tls.AlertLevel;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -31,14 +29,19 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.Parameters;
+
+
+@Parameters ({"browser"})
+@Test
+
 
 public class myntra {
 	
 	public static WebDriver driver;
 	 
 	
-  @Test(priority=1)
-public void addtocart() {
+  public void addtocart() {
 	  Actions action =new Actions(driver);
 	  driver.findElement(By.xpath("//input[@class='desktop-searchBar']")).sendKeys("tops");
 	 WebElement   f= driver.findElement(By.xpath("//ul[@class='desktop-group']"));
@@ -64,7 +67,6 @@ public void addtocart() {
 	driver.switchTo().window(childwindow);
 	System.out.println(driver.getTitle());
   }
-	  @Test(priority=2)
 	  public void addtocart2() {
 		  Actions action =new Actions(driver);
 	try {
@@ -84,22 +86,22 @@ public void addtocart() {
     	
   } 
 	  }
+	  @Parameters ({"browser"})
 	
-	
-	
-	
-	 
-	 
-	 
-	
-		 
-  @SuppressWarnings("deprecation")
+@SuppressWarnings("deprecation")
 @BeforeSuite
-  public void beforeMethod() {
+  public void beforeMethod( String browser) {
 	  
-	  
-	  WebDriverManager.chromedriver().setup();
-	  driver = new ChromeDriver();
+	  if( browser.equalsIgnoreCase("chrome"))
+	  {
+		  WebDriverManager.chromedriver().setup();
+		  driver = new ChromeDriver();
+	  }
+	  else if 
+	  ( browser.equalsIgnoreCase("edge")) {
+		  WebDriverManager.edgedriver().setup();
+		  driver = new EdgeDriver();
+	  }
 	
 	  driver.get("https://www.myntra.com/shop/men");
 	  driver.manage().window().maximize();
